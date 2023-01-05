@@ -1,11 +1,11 @@
-import Header from "./components/Layout/header"
-import Main from "./components/Layout/main"
+import Home from "./components/Layout/Home"
+import { Routes } from "react-router-dom"
+import { Route } from "react-router-dom"
 
 export default function App() {
   return (
-    <div>
-      <Header />
-      <Main />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+    </Routes>
   )
 }
