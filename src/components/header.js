@@ -1,5 +1,6 @@
 import React from 'react'
-import Square from "./redSquare"
+import Square from "./textSquare"
+import RedSquare from './redSquare'
 
 const Header = () => {
     return (
@@ -8,8 +9,8 @@ const Header = () => {
                 <Square text='TEXT' />
             </div>
             <div className='flex'>
-                <Square />
-                <Square />
+                <RedSquare />
+                <RedSquare />
             </div>
         </header>
     )

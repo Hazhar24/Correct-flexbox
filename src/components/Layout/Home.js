@@ -5,7 +5,7 @@ import Header from '../header'
 
 const Home = () => {
     return (
-        <div>
+        <div className='mb-20'>
             <Header />
             <Main />
         </div>

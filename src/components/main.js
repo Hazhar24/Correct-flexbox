@@ -1,13 +1,14 @@
 import React from 'react'
-import Recatangle from './greenRecatangle'
+import Recatangle from './greenRecatangleText'
 import RedblueSquare from './redblueSquare'
 import BigSquare from './bigSquare'
 import Square20 from './Square20'
+import GreenRecatangle from './greenRecatangle'
 
 
 const Main = () => {
     return (
-        <div className='w-2/3 flex flex-wrap justify-center mx-auto mt-12 md:flex md:w-2/3'>
+        <div className='w-3/4 flex flex-wrap justify-center mx-auto mt-12 lg:flex lg:w-3/4'>
             <div>
                 <Recatangle text='TEXT' />
                 <Recatangle text='TEXT' />
@@ -18,23 +19,23 @@ const Main = () => {
                 <Recatangle text='TEXT' />
                 <Recatangle text='TEXT' />
             </div>
-            <div className='flex flex-wrap md:w-3/4 lg:ml-5 justify-center'>
-                <div className='border-2 w-full border-gray-300 flex justify-between'>
+            <div className='flex flex-wrap justify-center lg:w-2/3 lg:ml-5'>
+                <div className='border-2 border-gray-300 flex-wrap justify-center w-full sm:w-full sm:flex sm:justify-between '>
                     <Square20 />
                     <Square20 />
                     <Square20 />
                 </div>
-                <div className='flex justify-between w-full mt-6'>
+                <div className='flex flex-wrap mt-6 justify-center sm:w-full sm:flex sm:justify-between'>
                     <RedblueSquare />
                     <RedblueSquare />
                 </div>
-                <div className='border-2 w-full md:w-full border-gray-300 flex justify-evenly items-center mt-6 h-56'>
-                    <div>
-                        <Recatangle />
-                        <Recatangle />
-                        <Recatangle />
+                <div className='w-full items-center border-2 mt-6 md:flex md:justify-evenly md:items-center'>
+                    <div className=' flex flex-col items-center justify-center'>
+                        <GreenRecatangle />
+                        <GreenRecatangle />
+                        <GreenRecatangle />
                     </div>
-                    <div className='grid grid-cols-3 gap-4 justify-between'>
+                    <div className='grid grid-cols-2 m-2 justify-items-center gap-3 sm:grid-cols-3'>
                         <BigSquare />
                         <BigSquare />
                         <BigSquare />

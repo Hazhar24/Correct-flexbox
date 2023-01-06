@@ -1,16 +1,16 @@
 import React from 'react'
 import BigSquare from './bigSquare'
-import Square from './redSquare'
+import Square from './textSquare'
 
 const RedblueSquare = () => {
     return (
         <div className='flex'>
-            <div>
+            <div className='mt-5 md:mt-1'>
                 <BigSquare />
             </div>
-            <div className='p-1'>
-                <div><p className='text-3xl'>TEXT</p></div>
-                <div className='pt-2'><Square text='TEXT' /></div>
+            <div className='p-1 mt-5 md:mt-1'>
+                <p className='text-3xl pl-10 sm:pl-2 md:pl-2'>TEXT</p>
+                <div className='pt-2 pl-10 sm:pl-2 md:pl-2'><Square text='TEXT' /></div>
             </div>
         </div>
     )

@@ -1,12 +1,13 @@
 import React from 'react'
 
-const Square = (props) => {
+const RedSquare = () => {
     return (
-        <span className='flex items-center '>
-            <div className='border w-12 h-12 bg-red-500'></div>
-            <p className='text-3xl p-1'>{props.text}</p>
-        </span>
+        <div>
+            <span>
+                <div className='border w-12 h-12 bg-red-500 m-1'></div>
+            </span>
+        </div>
     )
 }
 
-export default Square
+export default RedSquare

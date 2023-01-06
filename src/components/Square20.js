@@ -1,5 +1,5 @@
 import React from 'react'
-import Square from './redSquare'
+import Square from './textSquare'
 
 const Square20 = () => {
     return (
